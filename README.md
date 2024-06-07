@@ -6,12 +6,19 @@
     sudo apt-get install libgmp3-dev
 
 方法2: 从 https://gmplib.org 下载最新版本gmp
+
     wget https://gmplib.org/download/gmp/gmp-6.3.0.tar.gz
+
     tar -zxvf gmp-6.3.0.tar.gz
+
     cd gmp-6.3.0
+
     ./configure --enable-cxx
+
     make
+
     make check
+    
     sudo make install
 
 # 2 测试gmp库是否安装成功
