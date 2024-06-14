@@ -5,7 +5,7 @@ from phe import paillier
 # pip install phe
 
 def main():
-    l=2048  #1024 #2048 #3072
+    l=3072  #1024 #2048 #3072
     size_a=10
     print("n_length : ", l)
     start_time = time.time()
@@ -71,7 +71,7 @@ def main():
     plain_a_add_Eb=[]
     for x in cipher_a_add_Eb:
         plain_a_add_Eb.append(private_key.decrypt(x))
-    end_time = time.time()
+    #end_time = time.time()
     #print(plain_a_add_Eb)
 
 
